@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/swipe"
+    android:layout_height="match_parent"
+ >
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:scrollbars="none"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/main_menu" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nsv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ansd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.Toolbar
+                            android:id="@+id/toolbar4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                            app:menu="@menu/accout"
+                            app:navigationIcon="@drawable/ic_iconfinder_menu_4092560"
+                            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/shimmer400"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:forceDarkAllowed="false">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <include layout="@layout/shimmer5" />
+                            </LinearLayout>
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recview299"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layoutAnimation="@anim/fade"
+                                android:minHeight="700sp"
+                                android:visibility="gone" />
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:orientation="vertical"
+
+                            app:layout_anchorGravity="bottom">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="10dp"
+                                app:cardCornerRadius="6dp"
+                                app:cardElevation="10dp">
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    style="@style/ShapeAppearance.MaterialComponents.LargeComponent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="center"
+                                    android:text="@string/digital_portraits_for_just_1500"
+                                    android:visibility="gone" />
+
+                                <com.facebook.shimmer.ShimmerFrameLayout
+                                    android:id="@+id/shimmer3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:forceDarkAllowed="false">
+
+                                    <include
+                                        layout="@layout/shimmer3"
+                                        tools:ignore="TooDeepLayout" />
+                                </com.facebook.shimmer.ShimmerFrameLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/button5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/button_sub"
+                                android:forceDarkAllowed="false"
+                                android:foregroundGravity="center"
+                                android:gravity="center"
+                                android:text="@string/book_your_order"
+                                android:textColor="@color/white" />
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                app:cardCornerRadius="6dp"
+                                app:cardElevation="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/textView10"
+                                        style="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:textColor="@color/black"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/textView11"
+                                        style="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:foregroundGravity="center"
+                                        android:gravity="center"
+                                        android:visibility="gone" />
+
+                                    <com.facebook.shimmer.ShimmerFrameLayout
+                                        android:id="@+id/shimmer"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:forceDarkAllowed="false">
+
+                                        <include
+                                            layout="@layout/shimmer"
+                                            tools:ignore="TooDeepLayout" />
+                                    </com.facebook.shimmer.ShimmerFrameLayout>
+                                </LinearLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                style="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:forceDarkAllowed="false"
+                                android:gravity="center"
+                                android:text="@string/select_your_art_style"
+                                android:textColor="@color/colorSecondary"
+                                android:textStyle="bold" />
+
+                            <HorizontalScrollView
+                                android:id="@+id/horizontalScrollView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10sp"
+                                android:scrollbars="none">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/normal"
+                                        android:layout_width="150dp"
+                                        android:layout_height="200dp"
+                                        android:layout_marginStart="10dp"
+                                        android:background="@drawable/finalanna"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:id="@+id/watercolour"
+                                        android:layout_width="150dp"
+                                        android:layout_height="200dp"
+                                        android:layout_marginStart="10dp"
+                                        android:background="@drawable/xx"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:id="@+id/scribble"
+                                        android:layout_width="150dp"
+                                        android:layout_height="200dp"
+                                        android:layout_marginStart="10dp"
+                                        android:background="@drawable/ll"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:id="@+id/digital"
+                                        android:layout_width="150dp"
+                                        android:layout_height="200dp"
+                                        android:layout_marginStart="10dp"
+                                        android:background="@drawable/hh"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:id="@+id/digitalcon"
+                                        android:layout_width="150dp"
+                                        android:layout_height="200dp"
+                                        android:layout_marginStart="10dp"
+                                        android:background="@drawable/kk"
+                                        android:gravity="center" />
+
+                                    <TextView
+                                        android:id="@+id/creative"
+                                        style="@style/TextAppearance.AppCompat.Caption"
+                                        android:layout_width="150dp"
+                                        android:layout_height="200dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:background="@drawable/nn"
+                                        android:gravity="center" />
+                                </LinearLayout>
+                            </HorizontalScrollView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/neethu"
+                android:layout_width="wrap_content"
+                android:forceDarkAllowed="false"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_vertical|center_horizontal|center"
+                android:layout_margin="16dp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/colorSecondary"
+                android:text="@string/contact_us"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_anchor="@+id/horizontalScrollView"
+                app:layout_anchorGravity="center_horizontal|bottom"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.MaterialComponents.LargeComponent" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:contentDescription="@string/whatsapp"
+                style="@style/Platform.MaterialComponents.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end|center_vertical|center_horizontal|center|end"
+                android:layout_margin="16dp"
+                android:src="@drawable/whatsapp"
+                app:backgroundTint="@color/accent_material_light"
+                app:tint="@android:color/white" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

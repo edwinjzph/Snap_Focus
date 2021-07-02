@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Snap Focus
+    Productions</string>
+    <string name="sign_in">Sign in</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="email_address">Email-Address</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget password</string>
+    <string name="don_t_you_have_an_account">Don\'t you have an account</string>
+    <string name="sign_up_now">Sign up now</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="open_navi">open_navi</string>
+    <string name="close_navi">close_navi</string>
+    <string name="sign_up">Sign up</string>
+    <string name="full_name">Full name</string>
+    <string name="create_password">Create password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="already_have_an_account">Already have an account</string>
+    <string name="sign_in_now">Sign in now</string>
+    <string name="sign_up_later">Sign up Later</string>
+    <string name="reset_password">Reset password</string>
+    <string name="please_enter_your_email_address_we_will_send_you_an_email_to_reset_your_password">Please enter your email address.We will- send you an email to reset your password</string>
+    <string name="e_mail_address">E-mail Address</string>
+    <string name="send_email">Send Email</string>
+    <string name="open_mail_app">Open mail app</string>
+    <string name="digital_portraits_for_just_1500">Digital portraits for just 1500</string>
+    <string name="book_your_order">Book your order</string>
+    <string name="select_your_art_style">Select your art style</string>
+    <string name="art_style">Art style</string>
+    <string name="status">Status</string>
+    <string name="this_is_demo_name">This is demo name</string>
+    <string name="this_is_course_name">This is course name</string>
+    <string name="image">image</string>
+    <string name="not_verified_click_here_to_verify">Click here to verify.</string>
+    <string name="logout_of_this_device">Logout of this device</string>
+    <string name="my_orders">My orders</string>
+    <string name="your_order_is_successful_we_will_contact_you_asap">Your order is successful we will contact you asap</string>
+    <string name="go_back_to_home">Go back to home</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="zip">Zip</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="i_need_portrait_only_by_mail">I need portrait only by mail</string>
+    <string name="change_or_add_address">Change or add address</string>
+    <string name="portrait">Portrait</string>
+    <string name="expected_date_of_completion">Expected date of completion</string>
+    <string name="mm_dd_yyyy">MM-DD-YYYY</string>
+    <string name="pick_a_date">Pick a date</string>
+    <string name="reference_picture">Reference picture</string>
+    <string name="browse">Browse</string>
+    <string name="suggestions">Suggestions</string>
+    <string name="continu">Continue</string>
+    <string name="phone_numbe">Phone Number</string>
+    <string name="deliver_to">Deliver to</string>
+    <string name="thank_you_for_your_response_we_will_contact_you_as_soon_as_possible">Thank you for your response.We will contact you as soon as possible</string>
+    <string name="pick_a_service">Pick a service</string>
+    <string name="phone_number">Phone number</string>
+    <string name="or">OR</string>
+    <string name="contin">Continue</string>
+    <string name="email_snapfocusprods_aj_gmail_com_nphone_9072468615_8075181009_naddress_kunjattu_house_npadivattom_nedappaly_po_nkochi_24_psra_68">Email-snapfocusprods.aj@gmail.com
+        Phone-9072468615,8075181009
+        Address-Kunjattu house
+        padivattom
+        edappaly po
+        kochi 24 PSRA 68</string>
+    <string name="about_us">About us</string>
+    <string name="e_mail_or_delivery_address">E-mail or delivery address</string>
+    <string name="cancel_this_order">Cancel this order</string>
+    <string name="profile">profile</string>
+    <string name="check">check</string>
+    <string name="logout">logout</string>
+    <string name="cart">cart</string>
+    <string name="contact_us">Contact us</string>
+    <string name="whatsapp">whatsapp</string>
+    <string name="noth">noth</string>
+    <string name="ok">ok</string>
+    <string name="image5">image5</string>
+    <string name="you_have_no_orders_yet">You have no orders yet</string>
+    <string name="book_an_order">Book an order</string>
+    <string name="watch_on_youtube">Watch on youtube</string>
+
+</resources>

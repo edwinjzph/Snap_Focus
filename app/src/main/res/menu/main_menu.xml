@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_book"
+            android:icon="@drawable/ic_baseline_add_shopping_cart_24"
+            android:title="Book your order" />
+        <item
+            android:id="@+id/nav_status"
+            android:icon="@drawable/ic_baseline_done_all_24"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/contactuss"
+            android:icon="@drawable/ic_headphone"
+            android:title="Contact us" />
+    </group>
+    <item
+        android:id="@+id/ejhb"
+        android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_acccout"
+                    android:icon="@drawable/ic_accountt"
+                    android:title="My Account" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout"
+                    android:title="Sign out" />
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/user"
+                    android:title="Sign in" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/share"
+                    android:icon="@drawable/ic_baseline_share_24"
+                    android:title="Share app" />
+                <item
+                    android:id="@+id/insta"
+                    android:icon="@drawable/ic_baseline_policy_24"
+                    android:title="Privacy policy" />
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_baseline_branding_watermark_24"
+                    android:title="About us" />
+            </group>
+        </menu>
+    </item>
+</menu>

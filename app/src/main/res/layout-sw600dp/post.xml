@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    android:orientation="vertical"
+    app:cardElevation="5dp">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/postphoto"
+            android:contentDescription="@string/image"
+            android:layout_width="match_parent"
+            android:layout_height="230dp" />
+
+
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/image_slider2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:iss_auto_cycle="true"
+            app:iss_delay="1"
+            app:iss_error_image="@drawable/pp"
+            app:iss_period="2000"
+            app:iss_placeholder="@drawable/pp" />
+
+        <ImageView
+            android:id="@+id/postphoto3"
+            android:contentDescription="@string/image"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/postdis"
+            style="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+ />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/watchonyoutube"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:forceDarkAllowed="false"
+            android:layout_gravity="end"
+            android:text="@string/watch_on_youtube"
+            android:textAllCaps="false"
+            android:textColor="#eba229" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
